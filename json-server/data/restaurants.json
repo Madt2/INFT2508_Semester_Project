@@ -1,0 +1,10 @@
+{
+  "restaurants": [
+    { "id": 1, 
+      "name": "Joes Burger", 
+      "category": "American", 
+      "location": "63.4116910044569, 10.367048030118971", 
+      "contact": 84969304, 
+      "items" : [1] }
+  ]
+}
