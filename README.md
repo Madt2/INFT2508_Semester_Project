@@ -10,4 +10,4 @@ npx react-native run-ios --simulator ios\
 cd ..\
 cd json-server\
 npm install\
-json-server --watch /data.items.json\
+json-server --watch /data.items.json
