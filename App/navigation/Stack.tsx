@@ -2,7 +2,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {useStoreState} from 'pullstate';
 import React from 'react';
-import {Home} from '../assets';
 import {Filter} from '../screens/Filter';
 import {Item} from '../screens/Item';
 import {SettingsStore} from '../store/Settings';

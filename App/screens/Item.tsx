@@ -18,6 +18,7 @@ import {addFavorite, isFavorite, removeFavorite} from '../storage/Favorites';
 import {SettingsStore} from '../store/Settings';
 import {darkTheme, lightTheme} from '../style/colors';
 import {HEADLINE} from '../style/fonts';
+import {item, restaurant} from '../types';
 import {Button} from './../components/Button';
 
 type RootStackParamList = {
@@ -25,28 +26,6 @@ type RootStackParamList = {
 };
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Item'>;
-
-type restaurant = {
-  id: number;
-  name: string;
-  category: string;
-  contact: number;
-  location: string;
-  items: number[];
-};
-
-type item = {
-  id: number;
-  displaySize: number;
-  name: string;
-  price: number;
-  preparationTime: number;
-  description: string;
-  thumbnail: string;
-  restaurantId: number;
-  recommendedItems: number[];
-  gallery: string[];
-};
 
 export const Item = ({navigation, route}: Props) => {
   const theme = useStoreState(SettingsStore, s => s.theme);
